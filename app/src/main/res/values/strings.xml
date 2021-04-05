@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SecureRoomBase</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+    <string name="age">Age</string>
+    <string name="save">Save</string>
+    <string name="name">Name:</string>
+    <string name="age_indicator">Age:</string>
+    <string name="space"> </string>
+    <string name="edit_button">Edit button</string>
+    <string name="delete_button">delete button</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+</resources>
