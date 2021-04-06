@@ -2,16 +2,12 @@ package com.example.secureroombase.ui.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.VerifiedInputEvent
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.secureroombase.R
 import com.example.secureroombase.databinding.ListFragmentBinding
 import com.example.secureroombase.ui.BaseFragment
-import com.example.secureroombase.ui.create.CreatePersonFragment
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class ListFragment : BaseFragment(), PersonAdapter.ItemClickListener {
@@ -23,7 +19,7 @@ class ListFragment : BaseFragment(), PersonAdapter.ItemClickListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = ListFragmentBinding.inflate(inflater)
         subscribeToView()
 

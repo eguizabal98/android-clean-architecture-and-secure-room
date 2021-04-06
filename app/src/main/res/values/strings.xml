@@ -7,9 +7,8 @@
     <string name="save">Save</string>
     <string name="name">Name:</string>
     <string name="age_indicator">Age:</string>
-    <string name="space"> </string>
     <string name="edit_button">Edit button</string>
-    <string name="delete_button">delete button</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
+    <string name="button_to_add_new_person">Button to add new person</string>
 </resources>

@@ -10,5 +10,5 @@ java {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "org.koin:koin-core:2.2.0"
+    implementation "org.koin:koin-core:2.2.0"
 }

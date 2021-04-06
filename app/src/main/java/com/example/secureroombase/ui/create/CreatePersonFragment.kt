@@ -1,3 +1,5 @@
+@file:Suppress("unused", "unused")
+
 package com.example.secureroombase.ui.create
 
 import android.os.Bundle
@@ -10,17 +12,13 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class CreatePersonFragment : BaseFragment() {
 
-    companion object {
-        fun newInstance() = CreatePersonFragment()
-    }
-
     private val viewModel: CreatePersonViewModel by viewModel()
     private lateinit var binding: CreatePersonFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = CreatePersonFragmentBinding.inflate(inflater)
 
         return binding.root

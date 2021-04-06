@@ -2,9 +2,9 @@
 #include <string>
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_secureroombase_MainActivity_stringFromJNI(
-        JNIEnv* env,
+Java_com_example_secureroombase_SecureRoomApplication_keyFromJNI(
+        JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "Hello from C++";
+    std::string hello = "kl2mTvxV7Nstz7RXEjTkR@41s";
     return env->NewStringUTF(hello.c_str());
 }

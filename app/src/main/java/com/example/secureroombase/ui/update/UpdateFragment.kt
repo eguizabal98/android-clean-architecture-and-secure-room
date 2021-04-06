@@ -8,19 +8,18 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.secureroombase.databinding.UpdateFragmentBinding
 import com.example.secureroombase.ui.BaseFragment
-import com.example.secureroombase.ui.list.PersonAdapter
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class UpdateFragment : BaseFragment() {
 
     private val viewModel: UpdateViewModel by viewModel()
     private lateinit var binding: UpdateFragmentBinding
-    val args: UpdateFragmentArgs by navArgs()
+    private val args: UpdateFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = UpdateFragmentBinding.inflate(inflater)
         context?.let { init(binding.progressBarUpdate, it) }
         binding.lifecycleOwner = viewLifecycleOwner

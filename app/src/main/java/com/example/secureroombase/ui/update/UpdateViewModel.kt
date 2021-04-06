@@ -21,7 +21,7 @@ class UpdateViewModel(
     val firstNameField = ObservableField<String>()
     val secondNameField = ObservableField<String>()
     val ageField = ObservableField<String>()
-    var currentPerson: Person? = null
+    private var currentPerson: Person? = null
 
     private val _updatePersonState = MutableLiveData<Result<Person>>()
     val updatePersonState: LiveData<Result<Person>>

@@ -1,7 +1,6 @@
 package com.example.secureroombase.ui
 
 import android.content.Context
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -9,8 +8,8 @@ import com.example.domain.domain.Result
 
 abstract class BaseFragment : Fragment() {
 
-    var loadingView: View? = null
-    var contextBase: Context? = null
+    private var loadingView: View? = null
+    private var contextBase: Context? = null
 
     fun init(loadingView: View, context: Context) {
         this.loadingView = loadingView
@@ -37,7 +36,7 @@ abstract class BaseFragment : Fragment() {
         }
     }
 
-    fun showErrorMessage(error: String) {
+    private fun showErrorMessage(error: String) {
         contextBase?.let {
             Toast.makeText(contextBase, error, Toast.LENGTH_SHORT).show()
         }
@@ -49,11 +48,11 @@ abstract class BaseFragment : Fragment() {
         }
     }
 
-    fun stopProgress() {
+    private fun stopProgress() {
         loadingView?.visibility = View.GONE
     }
 
-    fun startProgress() {
+    private fun startProgress() {
         loadingView?.visibility = View.VISIBLE
     }
 
